@@ -1,0 +1,779 @@
+    /*
+ * ─── GENERALES ──────────────────────────────────────────────────────────────────
+ */
+    
+    body {
+        font-family: 'Nunito', sans-serif;
+        background-color: mintcream;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .contenedor {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .seccion {
+        padding: 30px 0;
+    }
+    
+    .seccion p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    h2 {
+        color: rgb(3, 3, 3);
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+    
+    h3 {
+        color: rgb(7, 43, 63);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    /*
+font-family: 'Cherry Cream Soda', ;
+
+font-family: 'Ubuntu', ;
+
+font-family: 'Nunito', ;
+*/
+    /*Header*/
+    
+    .hero {
+        background-image: url(../img/bicicletaHero.jpg);
+        height: 100vh;
+        background-attachment: no-repeat;
+        background-attachment: center center;
+        background-size: cover;
+    }
+    
+    .contenido-header {
+        padding: 1em 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(50, 95, 117, 0.671);
+    }
+    
+    .formIngreso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 5px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    
+    .formIngreso .item {
+        margin: 5px 0;
+        border-radius: 4px;
+        padding: 3px;
+        border: 0;
+        width: 150px;
+    }
+    
+    .formIngreso .item:last-child {
+        border-radius: 3px;
+        background-color: #631906;
+        color: white;
+        padding: 5px;
+    }
+    
+    .formIngreso .item:hover {
+        transform: scale(1.1);
+    }
+    
+    .logo1 {
+        max-width: 100%;
+        width: 250px;
+    }
+    
+    .signIn {
+        color: white;
+        font-size: 25px;
+        transition: .3s ease-in-out;
+    }
+    
+    .signIn:hover {
+        cursor: pointer;
+        color: #631906;
+        font-weight: bolder;
+        transform: scale(1.5);
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .contenido-header {
+            padding: 5px 4rem;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .logo1 {
+            max-width: 100%;
+            width: 14rem;
+        }
+    }
+    
+    @media only screen and ( min-width: 1210px) {
+        .formIngreso {
+            flex-direction: row;
+        }
+        .formIngreso .item {
+            margin: 0 5px;
+            width: 100px;
+            height: 30px;
+        }
+        .signIn {
+            display: 0;
+        }
+    }
+    
+    .redes-sociales {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 30rem;
+        max-width: 100%;
+    }
+    
+    .redes-sociales a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        margin-left: 5px;
+        display: block;
+    }
+    
+    .redes-sociales a:hover {
+        color: #631906;
+    }
+    
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px !important;
+    }
+    /*>---------------------------- Barra---------------------------------------< */
+    
+    .barra {
+        background-color: rgb(7, 43, 63);
+        padding: 1rem 0;
+    }
+    
+    .barraContenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .barraContenedor .menu-movil {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        margin: 20px 0;
+    }
+    
+    .barraContenedor .menu-movil:hover {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+    
+    @media only screen and ( min-width: 1000px) {
+        .barraContenedor .menu-movil {
+            margin: 0 20px;
+            display: none;
+        }
+    }
+    
+    .navbar a {
+        color: white;
+        font-size: 1.4em;
+        text-decoration: none;
+        width: 100%;
+        padding: 5px 7px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .navbar .resaltado {
+        color: #FFF;
+        background-color: #631906;
+    }
+    
+    @media only screen and ( min-width: 1000px) {
+        .barraContenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .navbar {
+            display: block;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 40rem;
+        }
+        .navbar a {
+            color: white;
+            font-size: 1.4em;
+            text-decoration: none;
+            width: auto;
+        }
+    }
+    
+    .bicis {
+        color: 000;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    .renta {
+        font-family: 'Cherry Cream Soda', sans-serif;
+        color: #FFF;
+        font-style: normal;
+    }
+    
+    .navbar a:hover {
+        background-color: transparent;
+        color: #bd7878;
+        text-decoration: none;
+    }
+    
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .servicio h2 {
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    /* Seccion Video */
+    
+    .video {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /*VENTAJAS*/
+    
+    .contenido-ventajas {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    
+    .ventajas {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .ventajas-contenedor {
+        min-height: 200px;
+        text-align: justify;
+        flex-direction: column;
+        max-width: 100%;
+        height: 426px;
+        width: 350px;
+        background-color: rgba(254, 238, 238, .8);
+    }
+    
+    .azul {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+        padding: 0 0 5px 0;
+        margin-left: 8px;
+        color: rgb(7, 43, 63);
+        margin-bottom: 5px;
+    }
+    
+    .ventajas-contenedor h3 {
+        font-weight: 100;
+        font-size: 20px;
+        margin-left: 8px;
+        color: rgb(51, 90, 5);
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .ventajas {
+            display: table;
+        }
+        .ventajas {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+    .ocultar {
+        display: none;
+    }
+    
+    .activo {
+        border-bottom: 2px solid #631906;
+    }
+    /*
+     * ─── ALGUNOS CLIENTES ───────────────────────────────────────────────────────────
+     */
+    
+    .grid {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .grid .item {
+        flex: 1 1 300px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .item p {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        background-color: rgba(7, 43, 63, 0.678);
+        color: white;
+        padding: 10px 10px;
+        width: 96%;
+        text-align: left;
+        display: block;
+        -webkit-transition: all .5s ease-in-out;
+    }
+    
+    .grid img {
+        width: 100%;
+        filter: grayscale(.8);
+        -webkit-filter: grayscale(.8);
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+    }
+    
+    .item img:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        filter: grayscale(.3);
+        -webkit-filter: grayscale(.3);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .item:hover .clienteSatisfecho {
+        bottom: -50px;
+        opacity: 0;
+    }
+    
+    @media only screen and ( min-width: 460px) {
+        .grid .item {
+            flex: 0 0 50%;
+            padding: 10px;
+        }
+    }
+    
+    @media only screen and ( min-width: 790px) {
+        .grid .item {
+            flex: 0 0 28%;
+            padding: 10px;
+        }
+    }
+    
+    .parallax {
+        margin: 4rem 0;
+    }
+    
+    .parallax::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    div.contador {
+        position: relative;
+        height: auto;
+    }
+    
+    div.contador::before {
+        background-image: url(../img/bicicleta8.jpg);
+        content: "";
+    }
+    
+    .resumen-evento {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding: 4rem 3px;
+        align-items: center;
+    }
+    
+    @media only screen and ( min-width: 1220px) {
+        .resumen-evento {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    
+    .resumen-evento li {
+        width: 50%;
+        color: white;
+        font-family: 'Cherry Soda', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .numero {
+        color: rgb(7, 43, 63);
+        font-weight: bolder;
+        font-size: 3em;
+        margin: 0 0 10px 0;
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .resumen-evento li {
+            width: 25%;
+        }
+    }
+    /*Tablas de precios*/
+    
+    .pricing {
+        display: flex;
+        margin: auto;
+        padding: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .precios {
+        background: #f1f1f1;
+        flex: 0 0 350px;
+        margin: 10px;
+        text-transform: uppercase;
+        transition: ease-in-out;
+    }
+    
+    .precios:hover {
+        transform: scale(1.1);
+    }
+    
+    .preciosHeader {
+        color: white;
+        position: relative;
+        margin: 20px;
+    }
+    
+    .precio {
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1px;
+    }
+    
+    .precio span {
+        font-size: 30px;
+    }
+    
+    .titulo {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 80%;
+        max-width: 35rem;
+        text-align: center;
+        padding: 8px 0;
+    }
+    
+    .pricingList {
+        padding: 10px 20px;
+    }
+    
+    .pricingList li {
+        margin: 8px 0;
+        font-size: 15px;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    
+    .border {
+        width: 80px;
+        height: 1px;
+        background-color: #2e2e2e;
+        margin: auto;
+    }
+    
+    .buttonPrice {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: white;
+        color: rgb(99, 25, 6);
+        border: solid 1px rgb(99, 25, 6);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+    }
+    
+    .buttonPrice:hover {
+        background-color: rgb(99, 25, 6);
+        color: white;
+        text-decoration: none;
+    }
+    
+    .tabla1 .preciosHeader {
+        background-color: rgb(7, 43, 63);
+    }
+    
+    .tabla2 .preciosHeader {
+        background-color: rgb(99, 25, 6);
+    }
+    
+    .tabla3 .preciosHeader {
+        background-color: rgb(51, 90, 5);
+    }
+    
+    .tabla1 .titulo {
+        background-image: linear-gradient(125deg, #325F75, #011B28);
+    }
+    
+    .tabla2 .titulo {
+        background-image: linear-gradient(125deg, #3F0D00, #B86049);
+    }
+    
+    .tabla3 .titulo {
+        background-image: linear-gradient(125deg, #1e3900, #78a742);
+    }
+    
+    @media only screen and ( max-width: 768px) {
+        .precios {
+            flex: 100%;
+        }
+    }
+    
+    footer {
+        background-color: #2e2e2e;
+        padding: 1rem 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .chil>a {
+        font-size: 18px;
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .contenedor-footer {
+            margin: 0 auto;
+            width: 85%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor-footer>.chil {
+            margin: 0 auto;
+        }
+    }
+    /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+    /*
+ * Hide visually and from screen readers
+ */
+    
+    .hidden {
+        display: none !important;
+    }
+    /*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+    
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        /* 1 */
+    }
+    /*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+    
+    .sr-only.focusable:active,
+    .sr-only.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        white-space: inherit;
+        width: auto;
+    }
+    /*
+* Hide visually and from screen readers, but maintain layout
+*/
+    
+    .invisible {
+        visibility: hidden;
+    }
+    /*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+    
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    /* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+    
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+    }
+    
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+    /* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+    
+    @media print {
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            /* Black prints faster */
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+        /*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+        pre {
+            white-space: pre-wrap !important;
+        }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+        /*
+* Printing Tables:
+* https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
+        thead {
+            display: table-header-group;
+        }
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
