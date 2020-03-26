@@ -69,7 +69,7 @@
 
             <i class="menu-movil fa fa-bars" id="menu-movil"></i>
 
-            <div class="navbar ocultar">
+            <div class="navbar">
                 <a href="index.html">INICIO</a>
                 <a href="registro.html" class="resaltado">REGISTRO</a>
                 <a href="#">EVENTOS</a>
@@ -80,6 +80,169 @@
     </div>
     <!-- termina la barra -->
     <section class="contenedor">
+
+        <form class="registroForm" action="">
+            <h2>Registro Nueva Cuenta</h2>
+            <label for="nombre">Nombre de usuario</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Aquí escribe tu nombre">
+            <label for="email">Tu email</label>
+            <input type="email" name="email" id="email" placeholder="Aquí va email">
+            <label for="password">Escribe tu contraseña</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="enviar" class="buttonPrice">ENVIAR</button>
+        </form>
+        <div id="felizCompra"></div>
+        <div id="errorDiv"></div>
+
+    </section>
+    <!--
+     -- ─── SECCION TABLAS DE PRECIOS ──────────────────────────────────────────────────
+     -->
+
+
+    <section class="pricing">
+
+        <div class="precios tabla1">
+            <div class="preciosHeader">
+
+                <div class="precio">
+                    <span>$</span>50
+                </div>
+                <div class="titulo">
+                    Básico
+                </div>
+            </div>
+            <ul class="pricingList">
+                <li>
+                    <strong>1 </strong>SEMANA
+                    <div class="border"></div>
+                </li>
+                <li><strong>50</strong> MINUTOS
+                    <div class="border"></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border"></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border"></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paqueteBasico" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla1 -->
+        <div class="precios tabla2 ">
+            <div class="preciosHeader ">
+
+                <div class="precio ">
+                    <span>$</span>300
+                </div>
+                <div class="titulo ">
+                    PREMIUM
+                </div>
+            </div>
+            <ul class="pricingList ">
+                <li>
+                    <strong>1 </strong>AÑO
+                    <div class="border "></div>
+                </li>
+                <li><strong>90</strong> MINUTOS
+                    <div class="border "></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border "></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border "></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paquetePremium" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla2 -->
+        <div class="precios tabla3">
+            <div class="preciosHeader">
+
+                <div class="precio">
+                    <span>$</span>100
+                </div>
+                <div class="titulo">
+                    STANDARD
+                </div>
+            </div>
+            <ul class="pricingList">
+                <li>
+                    <strong>3 </strong>MESES
+                    <div class="border"></div>
+                </li>
+                <li><strong>70</strong> MINUTOS
+                    <div class="border"></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border"></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border"></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paqueteStandard" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla3 -->
+    </section>
+    <section>
+        <div class="contenedor complementos">
+            <div class="itemComplemento">
+                <img src="img/thumbs/botella_de_agua.jpg" alt="botella de agua">
+                <p>Botella de agua a prueba de derrames</p>
+                <p class="precio">$80.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="botellaAgua" id="botellaAgua">
+
+            </div>
+            <div class="itemComplemento">
+                <img src="img/thumbs/playera1.png" alt="Playera Bicis">
+                <p>Playera con nuestro logo de bicis</p>
+                <p class="precio">$140.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="playeraBicis" id="playeraBicis">
+            </div>
+            <div class="itemComplemento">
+                <img src="img/thumbs/gafasBicis.png" alt="Gafas para sol">
+                <p>Gafas para sol</p>
+                <p class="precio">$250.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="gafas bicis" id="gafasBicis">
+            </div>
+        </div>
+    </section>
+
+    <!--
+      -- ─── SECION DE PAGO ─────────────────────────────────────────────────────────────
+      -->
+
+    <section class="pago">
+        <h3>Pago</h3>
+        <div class="orden">
+            <input type="button" id="calcular" class="buttonPrice" value="CALCULAR">
+            <div class="total">
+                <p>Resumen de la orden:</p>
+                <div class="listaProductos" id="listaProductos">
+
+                </div>
+                <p>TOTAL: </p>
+                <div id="suma-total">
+
+                </div>
+                <input type="submit" id="btnRegistro" class="buttonPrice" value="pagar">
+            </div>
+        </div>
 
     </section>
     <footer>

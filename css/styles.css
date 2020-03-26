@@ -237,21 +237,22 @@ font-family: 'Nunito', ;
             justify-content: space-between;
         }
         .navbar {
-            display: block;
+            display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 40rem;
+            justify-content: center;
+            width: 90%;
         }
         .navbar a {
             color: white;
             font-size: 1.4em;
             text-decoration: none;
             width: auto;
+            margin-left: 2rem;
         }
     }
     
     .bicis {
-        color: 000;
+        color: #000;
         font-family: 'Ubuntu', sans-serif;
         font-weight: bolder;
         font-style: italic;
@@ -372,7 +373,7 @@ font-family: 'Nunito', ;
         background-color: rgba(7, 43, 63, 0.678);
         color: white;
         padding: 10px 10px;
-        width: 96%;
+        width: 89%;
         text-align: left;
         display: block;
         -webkit-transition: all .5s ease-in-out;
@@ -554,16 +555,19 @@ font-family: 'Nunito', ;
         background-color: white;
         color: rgb(99, 25, 6);
         border: solid 1px rgb(99, 25, 6);
+        border-radius: 8px;
         padding: 10px;
         text-align: center;
         text-decoration: none;
         transition: all .3s ease-in-out;
+        box-shadow: 0px 0px 2px black;
     }
     
     .buttonPrice:hover {
         background-color: rgb(99, 25, 6);
         color: white;
         text-decoration: none;
+        box-shadow: 0 0 2px black;
     }
     
     .tabla1 .preciosHeader {
@@ -620,6 +624,87 @@ font-family: 'Nunito', ;
             margin: 0 auto;
         }
     }
+    /*
+     * ─── EXTERNAS ───────────────────────────────────────────────────────────────────
+     */
+    /* registro  formulario*/
+    
+    .registroForm {
+        background-color: rgba(66, 41, 10, 0.801);
+        width: 15rem;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px 10px;
+        justify-content: space-around;
+        border-radius: 8px;
+        margin: 20px auto;
+        color: white;
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .registroForm {
+            width: 25rem;
+        }
+    }
+    
+    .registroForm h2 {
+        padding: 5px 0;
+    }
+    
+    .registroForm input {
+        margin-bottom: 10px;
+    }
+    
+    .elegido {
+        margin: 10px auto;
+        text-align: center;
+    }
+    /************************Complementos****************/
+    
+    .pago {
+        background: #f1f1f1;
+        width: 350px;
+        margin: 40px auto;
+        padding: 5px;
+    }
+    
+    .complementos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .complementos {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    
+    .itemComplemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border: solid 1px rgba(184, 181, 181, 0.664);
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .itemComplemento img {
+        width: 200px;
+        border-radius: 20px;
+    }
+    
+    .itemComplemento p {
+        margin: 10px 0;
+        padding: 5px;
+    }
+    
+    .itemComplemento .precio {
+        font-size: 1.5rem;
+    }
+    /**/
     /* ==========================================================================
    Helper classes
    ========================================================================== */
