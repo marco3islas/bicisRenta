@@ -177,6 +177,13 @@ font-family: 'Nunito', ;
         padding: 1rem 0;
     }
     
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+    }
+    
     .barraContenedor {
         display: flex;
         flex-direction: column;
@@ -469,7 +476,12 @@ font-family: 'Nunito', ;
         justify-content: space-around;
         text-align: center;
         padding: 4rem 3px;
-        align-items: center;
+    }
+    
+    @media only screen and ( min-width: 768px) {
+        .resumen-evento {
+            align-items: center;
+        }
     }
     
     @media only screen and ( min-width: 1220px) {

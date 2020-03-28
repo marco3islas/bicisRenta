@@ -145,7 +145,7 @@ $(function() {
         }
 
         if (playeraBicis >= 1) {
-            listadoProductos.push(playeraBicis + ' Playeras de sol');
+            listadoProductos.push(playeraBicis + ' Playeras');
         }
 
         if (gafasBicis >= 1) {
@@ -164,6 +164,31 @@ $(function() {
 
 
     }
+});
+//
+// ─── MENU FIJO ──────────────────────────────────────────────────────────────────
+//    
+
+$(function() {
+
+    var windowHeight = $(window).height();
+
+    var barraAltura = $('.barra').innerHeight();
+
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll > windowHeight) {
+            $('.barra').addClass('sticky');
+            $('body').css({ 'margin-top': barraAltura + 'px' });
+        } else {
+            $('.barra').removeClass('sticky');
+            $('body').css({
+                'margin-top': 0 + 'px'
+            });
+        }
+    });
 
 
 });
