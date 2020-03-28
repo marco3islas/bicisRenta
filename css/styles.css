@@ -147,11 +147,12 @@ font-family: 'Nunito', ;
     .redes-sociales {
         display: flex;
         text-align: center;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         padding: 10px;
-        width: 30rem;
+        width: 10rem;
         max-width: 100%;
+        margin: 0 auto;
     }
     
     .redes-sociales a {
@@ -180,6 +181,7 @@ font-family: 'Nunito', ;
     .sticky {
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
         z-index: 50;
     }
@@ -639,6 +641,23 @@ font-family: 'Nunito', ;
         text-align: center;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .copyright {
+        width: 335px;
+        margin: 0 0 -26px;
+    }
+    
+    footer .copyright p {
+        font-size: 12px;
+        background-color: #222222;
+        color: #b4b4b4;
     }
     
     .chil>a {
@@ -648,10 +667,14 @@ font-family: 'Nunito', ;
     @media only screen and ( min-width: 768px) {
         .contenedor-footer {
             margin: 0 auto;
-            width: 85%;
+            width: 90%;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+        }
+        .copyright {
+            width: 100%;
+            margin: 0 0 -44px;
         }
         .contenedor-footer>.chil {
             margin: 0 auto;
