@@ -302,9 +302,9 @@ font-family: 'Nunito', ;
     
     .contenido-ventajas {
         position: absolute;
-        left: 5px;
         bottom: 16px;
         width: 300px;
+        left: 5px;
     }
     
     .ventajas {
@@ -359,7 +359,7 @@ font-family: 'Nunito', ;
             justify-content: center;
         }
         .contenido-ventajas {
-            left: 300px;
+            left: 314px;
         }
         .ventajas {
             display: table;
@@ -375,7 +375,7 @@ font-family: 'Nunito', ;
     }
     
     .activo {
-        border-bottom: 2px solid #631906;
+        border: 2px solid #631906;
     }
     /*
      * ─── ALGUNOS CLIENTES ───────────────────────────────────────────────────────────
