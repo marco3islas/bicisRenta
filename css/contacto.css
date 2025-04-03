@@ -1,0 +1,50 @@
+.contenedorContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+h2 {
+  margin: 5px;
+  padding: 5px;
+}
+.contorno {
+  border: 3px solid #631906;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px;
+  margin: 8px 5px;
+  border-radius: 20px;
+}
+
+textarea {
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.aviso {
+  color: red;
+  margin: 10px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  .contenedorContacto {
+    height: 100vh;
+  }
+  
+}

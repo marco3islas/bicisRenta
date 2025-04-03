@@ -115,7 +115,7 @@ font-family: 'Nunito', ;
         cursor: pointer;
         color: #631906;
         font-weight: bolder;
-        transform: scale(1.5);
+        transform: scale(1);
     }
     
     @media only screen and ( min-width: 768px) {
@@ -192,6 +192,14 @@ font-family: 'Nunito', ;
         justify-content: space-between;
         align-items: center;
     }
+
+    .logoMenu {
+      width: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     
     .barraContenedor .menu-movil {
         text-decoration: none;

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BICISENRENTA</title>
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="https://kit.fontawesome.com/03231c08d1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Nunito:400,600,700|Ubuntu:400,400i,500,700,700i&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
+
+
+</head>
+<my-navbar></my-navbar>
+    <section class="pricing">
+
+        <div class="precios tabla1">
+            <div class="preciosHeader">
+
+                <div class="precio">
+                    <span>$</span>50
+                </div>
+                <div class="titulo">
+                    Básico
+                </div>
+            </div>
+            <ul class="pricingList">
+                <li>
+                    <strong>1 </strong>SEMANA
+                    <div class="border"></div>
+                </li>
+                <li><strong>50</strong> MINUTOS
+                    <div class="border"></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border"></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border"></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paqueteBasico" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla1 -->
+        <div class="precios tabla2 ">
+            <div class="preciosHeader ">
+
+                <div class="precio ">
+                    <span>$</span>300
+                </div>
+                <div class="titulo ">
+                    PREMIUM
+                </div>
+            </div>
+            <ul class="pricingList ">
+                <li>
+                    <strong>1 </strong>AÑO
+                    <div class="border "></div>
+                </li>
+                <li><strong>90</strong> MINUTOS
+                    <div class="border "></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border "></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border "></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paquetePremium" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla2 -->
+        <div class="precios tabla3">
+            <div class="preciosHeader">
+
+                <div class="precio">
+                    <span>$</span>100
+                </div>
+                <div class="titulo">
+                    STANDARD
+                </div>
+            </div>
+            <ul class="pricingList">
+                <li>
+                    <strong>3 </strong>MESES
+                    <div class="border"></div>
+                </li>
+                <li><strong>70</strong> MINUTOS
+                    <div class="border"></div>
+                </li>
+                <li>
+                    <strong>TODOS</strong>Los Puestos
+                    <div class="border"></div>
+                </li>
+                <li><strong>24</strong>HRS
+                    <div class="border"></div>
+                </li>
+            </ul>
+            <div class="elegido">
+                <label for="elegido">Me lo llevo!!</label>
+                <input type="number" min="0" placeholder="0" id="paqueteStandard" nombre="elegido">
+            </div>
+        </div>
+        <!-- termina tabla3 -->
+    </section>
+    <section>
+        <div class="contenedor complementos">
+            <div class="itemComplemento">
+                <img src="../img/thumbs/botella_de_agua.jpg" alt="botella de agua">
+                <p>Botella de agua a prueba de derrames</p>
+                <p class="precio">$80.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="botellaAgua" id="botellaAgua">
+
+            </div>
+            <div class="itemComplemento">
+                <img src="../img/thumbs/playera1.png" alt="Playera Bicis">
+                <p>Playera con nuestro logo de bicis</p>
+                <p class="precio">$140.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="playeraBicis" id="playeraBicis">
+            </div>
+            <div class="itemComplemento">
+                <img src="../img/thumbs/gafasBicis.png" alt="Gafas para sol">
+                <p>Gafas para sol</p>
+                <p class="precio">$250.00</p>
+                <input type="number" min="0" size="3" placeholder="0" name="gafas bicis" id="gafasBicis">
+            </div>
+        </div>
+    </section>
+
+<!-- seccion de pago -->
+    <section class="pago">
+        <h3>Pago</h3>
+        <div class="orden">
+            <input type="button" id="calcular" class="buttonPrice" value="CALCULAR">
+            <div class="total">
+                <p>Resumen de la orden:</p>
+                <div class="listaProductos" id="listaProductos">
+
+                </div>
+                <p>TOTAL: </p>
+                <div id="suma-total">
+
+                </div>
+                <input type="submit" id="btnRegistro" class="buttonPrice" value="pagar">
+            </div>
+        </div>
+    </section>
+<my-footer></my-footer>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/jquery.animateNumber.min.js"></script>
+</html>
